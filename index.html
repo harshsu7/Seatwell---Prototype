@@ -8,23 +8,23 @@
 </head>
 <body class="bg-[#0F111A] text-white font-sans">
   <!-- Hero Section with Navbar -->
-  <section class="relative h-screen bg-cover bg-center" style="background-image: url('pexels-riciardus-41257.jpg');">
+  <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('pexels-riciardus-41257.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
 
     <!-- Navbar on top of background -->
-    <header class="relative z-20 flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold text-white">
+    <header class="relative z-20 flex flex-wrap md:flex-nowrap justify-between items-center px-4 sm:px-6 py-4">
+      <h1 class="text-lg sm:text-xl font-bold text-white mb-2 md:mb-0">
         <span class="bg-red-600 px-2 py-1 rounded">S</span> Seatwell
       </h1>
-      <nav class="">
-        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white font-medium ml-4">Home</button>
-        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white font-medium ml-4">Browse</button>
-        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white font-medium ml-4">My Tickets</button>
-        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white font-medium ml-4">Search</button>
-        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white font-medium ml-4">Sell Ticket</button>
+      <nav class="flex flex-wrap gap-2 justify-center md:justify-end">
+        <button class="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white text-sm sm:text-base font-medium">Home</button>
+        <button class="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white text-sm sm:text-base font-medium">Browse</button>
+        <button class="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white text-sm sm:text-base font-medium">My Tickets</button>
+        <button class="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white text-sm sm:text-base font-medium">Search</button>
+        <button class="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white text-sm sm:text-base font-medium">Sell Ticket</button>
       </nav>
-      <!-- Mobile menu icon (for mockup only) -->
-      <div class="md:hidden">
+      <!-- Mobile menu icon (optional, non-functional for now) -->
+      <div class="md:hidden mt-2">
         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -32,12 +32,12 @@
     </header>
 
     <!-- Hero Content -->
-    <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-32">
-      <h2 class="text-5xl font-extrabold mb-4 drop-shadow-md text-white"> 
-        Turn missed games into money, <br> 
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 py-20 sm:py-32">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-md text-white"> 
+        Turn missed games into money, <br class="hidden sm:block"> 
         List your ticket on Seatwell now. 
       </h2>
-    <button onclick="window.location.href='sell.html'" class="mt-4 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded text-lg font-semibold shadow-lg">Sell Your Ticket</button>
+      <button onclick="window.location.href='sell.html'" class="mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded text-base sm:text-lg font-semibold shadow-lg">Sell Your Ticket</button>
     </div>
   </section>
 </body>
