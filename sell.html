@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell Your Ticket – Seatwell</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#0F111A] text-white font-sans relative" style="background-image: url('pexels-riciardus-41257.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+  <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-0"></div>
+  <div class="min-h-screen flex items-center justify-center px-6 py-10 relative z-10">
+
+  <div class="min-h-screen flex items-center justify-center px-6 py-10">
+    <div class="bg-black bg-opacity-60 backdrop-blur-md p-8 rounded-lg w-full max-w-2xl shadow-lg">
+      <h2 class="text-3xl font-bold text-center text-white mb-8">Sell Your Ticket</h2>
+      <form class="space-y-6">
+        <div>
+          <label class="block mb-2 font-medium">Match Name</label>
+          <input type="text" placeholder="e.g. Mumbai FC vs Kerala Blasters" class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white" required>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-1">
+            <label class="block mb-2 font-medium">Date</label>
+            <input type="date" class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white" required>
+          </div>
+          <div class="flex-1">
+            <label class="block mb-2 font-medium">Time</label>
+            <input type="time" class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white" required>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-1">
+            <label class="block mb-2 font-medium">Seat No.</label>
+            <input type="text" placeholder="A14" class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white">
+          </div>
+          <div class="flex-1">
+            <label class="block mb-2 font-medium">Section</label>
+            <input type="text" placeholder="East Stand" class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white">
+          </div>
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Upload Ticket (optional)</label>
+          <input type="file" class="w-full bg-gray-900 text-white file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-red-600 file:text-white hover:file:bg-red-700" />
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Payout Method</label>
+          <select class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white">
+            <option>UPI</option>
+            <option>Bank Transfer</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Your UPI ID / Bank Details</label>
+          <input type="text" placeholder="yourupi@bank / Acc No. & IFSC" class="w-full px-4 py-2 rounded bg-gray-900 border border-gray-600 text-white">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="mt-4 bg-red-600 hover:bg-red-700 px-6 py-3 rounded text-white text-lg font-semibold shadow-md">Submit Ticket</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
